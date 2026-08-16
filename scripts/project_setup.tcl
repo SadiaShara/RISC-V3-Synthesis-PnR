@@ -1,9 +1,9 @@
- 1 # Setup tcl                                                                                                               2 # Sadia Tasnim Shara (22-48622-3)
-  3 #Project 3A: RISC_V3 Synthesis and PnR
-  4
-  5 ##########################
-  6 # Technology Setup
-  7 ##########################
+  # Setup tcl                                                                                                                               
+  # Sadia Tasnim Shara (22-48622-3)
+  #Project : RISC_V3 Synthesis and PnR
+  ##########################
+  # Technology Setup
+  ##########################
   8 #
   9 set TECH "sky130_cadence" ;# Options: "gpdk045 | sky130_cadence | sky130_open"
  10
