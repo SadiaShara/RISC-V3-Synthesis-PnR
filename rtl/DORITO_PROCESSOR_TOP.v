@@ -1,0 +1,30 @@
+20 timeunit 1ns;
+ 21 timeprecision 1ps;
+ 22
+ 23 import DORITO_PKG::*;
+ 24 module DORITO_PROCESSOR_TOP
+ 25 (input  logic SYS_CLOCK,
+ 26 input  logic FSM_ARESET,
+ 27 input  logic [BUS_SIZE-1 : 0] MEM_DATA_OUT,
+ 28 //output var logic [BUS_SIZE-1 : 0] MEM_ADDRESS,
+ 29 output   logic signed [ADDR_SIZE-1 : 0] MEM_ADDRESS,PC_OUT,
+ 30 //MAKE ADDRESS 5 BIT (CAN POINT TO 32 LOCATIONS) FOR EASIER VERIFICATION.
+ 31 output  logic MEM_ARESET, MEM_WRITE,
+ 32 output  logic EN,       //ADDED
+ 33 output  logic [BUS_SIZE-1 : 0] MEM_DATA_IN,
+ 34 output   logic [BUS_SIZE-1 : 0] ACCUM_REG
+ 35 );
+ 36
+ 37 //module DORITO_PROCESSOR_TOP (.*);
+ 38 //timeunit 1ns;
+ 39 //timeprecision 1ps;
+ 40
+ 41  logic SCLR_PC, INC_PC, LOAD_PC,
+ 42 LOAD_IR, REG_FILE_ARESET, LOAD_DEST_REG, LOAD_ACCUM_REG, IMM_OFFSET_SELECTOR, SEL_SOURCE1, SEL_SOURCE2, SEL_DATA, SEL_AD    DR,
+ 43 LOAD_ADDR_REG, CARRYOUT, U_OVF, S_OVF, ALU_OUT_ZERO, ALU_OUT_POS, ALU_OUT_NEG;
+ 44  logic [MNEMONIC_SIZE-1 : 0] ALU_CONTROL;
+ 45  logic [BUS_SIZE-1 : 0] IR_OUT;
+ 46 var logic [REG_ADDR_SIZE-1 : 0] SEL_SOURCE_REG1, SEL_SOURCE_REG2, SEL_DEST_REG;
+ 47 DORITO_FSM FSM (.*);
+ 48 DORITO_DATAPATH DP (.*); 
+endmodule : DORITO_PROCESSOR_TOP
