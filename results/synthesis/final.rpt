@@ -1,0 +1,47 @@
+ 4 QoS Summary for DORITO_PROCESSOR_TOP
+  5 ==========================================================================================
+  6 Metric                          generic         map             syn_opt         final
+  7 ==========================================================================================
+  8 Slack (ps):                     4,514             787               0               0
+  9   R2R (ps):                     8,090           3,671           3,226           3,226
+ 10   I2R (ps):                    11,998          11,754          11,765          11,765
+ 11   R2O (ps):                     4,514             787               0               0
+ 12   I2O (ps):                  no_value        no_value        no_value        no_value
+ 13   CG  (ps):                  no_value        no_value        no_value        no_value
+ 14 TNS (ps):                           0               0               0               0
+ 15   R2R (ps):                         0               0               0               0
+ 16   I2R (ps):                         0               0               0               0
+ 17   R2O (ps):                         0               0               0               0
+ 18   I2O (ps):                  no_value        no_value        no_value        no_value
+ 19   CG  (ps):                  no_value        no_value        no_value        no_value
+ 20 Failing Paths:                      0               0               0               0
+ 21 Leakage Power (nW):             3,789           3,439           3,307           3,307
+ 22 Cell Area:                     64,033          34,643          33,735          33,735
+ 23 Total Cell Area:               64,033          34,643          33,735          33,735
+ 24 Leaf Instances:                 4,500           2,580           2,515           2,515
+ 25 Total Instances:                4,500           2,580           2,515           2,515
+ 26 Utilization (%):                 0.00            0.00            0.00            0.00
+ 27 Tot. Net Length (um):        no_value        no_value        no_value        no_value
+ 28 Avg. Net Length (um):        no_value        no_value        no_value        no_value
+ 29 Route Overflow H (%):        no_value        no_value        no_value        no_value
+ 30 Route Overflow V (%):        no_value        no_value        no_value        no_value
+ 31 MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+32 Norm Cong Hotspot Area:
+ 33   Max Cong:                  no_value        no_value        no_value        no_value
+ 34   Tot Cong:                  no_value        no_value        no_value        no_value
+ 35 ==========================================================================================
+ 36 CPU  Runtime (h:m:s):        00:01:23        00:01:47        00:00:20        00:00:03
+ 37 Real Runtime (h:m:s):        00:01:17        00:01:26        00:00:23        00:00:08
+ 38 CPU  Elapsed (h:m:s):        00:01:35        00:03:21        00:03:41        00:03:43
+ 39 Real Elapsed (h:m:s):        00:01:22        00:02:47        00:03:10        00:03:17
+ 40 Memory (MB):                  1689.79         1686.83         1688.47         1718.47
+ 41 ==========================================================================================
+ 42 ==========================================================================================
+ 43 Flow Settings:
+ 44 ==========================================================================================
+ 45 Total Runtime (h:m:s): 00:03:20
+ 46 Total Memory (MB):     1718.47
+ 47 Executable Version:    21.18-s082_1
+ 48 ==========================================================================================
+ 49 Total Cell Area =  Cell Area + Physical Cell Area
+ 50 Total Instances =  Leaf Instances + Physical Instances
